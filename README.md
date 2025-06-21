@@ -1,94 +1,92 @@
+Jarvis Voice Assistant
+Jarvis is a voice-activated desktop assistant built with Python.
 
-
-````markdown
-# Jarvis Voice Assistant
-
-**Jarvis** is a voice-activated desktop assistant built with Python.  
 It can search Wikipedia, open websites, play music, tell the current time, and more—all with voice commands.
 
-## Features
+Features
+Voice recognition using Google Speech Recognition
 
-- Voice recognition using Google Speech Recognition
-- Text-to-speech responses
-- Search Wikipedia and read summaries aloud
-- Open YouTube, Google, or StackOverflow
-- Play music from a local directory
-- Tell the current time
+Text-to-speech responses
 
-## Requirements
+Search Wikipedia and read summaries aloud
 
-- Python 3.6+
-- `pyttsx3`
-- `SpeechRecognition`
-- `wikipedia`
-- `pyaudio`
-- (Optional) `pipwin` (to install PyAudio on Windows)
+Open YouTube, Google, or StackOverflow
 
-## Installation
+Play music from a local directory
 
-1. **Clone the repository** (or copy the files to a folder):
+Tell the current time
 
-   ```bash
-   git clone https://github.com/yourusername/jarvis-voice-assistant.git
-   cd jarvis-voice-assistant
-````
+Requirements
+Python 3.6+
 
-2. **Create a virtual environment** (recommended):
+pyttsx3
 
-   ```bash
-   python -m venv venv
-   source venv/bin/activate    # On Linux/Mac
-   venv\Scripts\activate       # On Windows
-   ```
+SpeechRecognition
 
-3. **Install dependencies**:
+wikipedia
 
-   ```bash
-   pip install -r requirements.txt
-   ```
+pyaudio
 
-   > **Note:**
-   > If you get errors with `PyAudio` on Windows, run:
-   >
-   > ```bash
-   > pip install pipwin
-   > pipwin install pyaudio
-   > ```
+(Optional) pipwin (to install PyAudio on Windows)
 
-4. **Update the music folder path:**
+Installation
+Clone the repository (or copy the files to a folder):
 
-   * In the code, change `music_dir = 'E:\\music'` to your actual music folder path.
+sh
 
-## Usage
+Copy
+git clone https://github.com/yourusername/jarvis-voice-assistant.git
+cd jarvis-voice-assistant
+Create a virtual environment (recommended):
 
-1. **Run the assistant:**
+sh
 
-   ```bash
-   python jarvis.py
-   ```
+Copy
+python -m venv venv
+source venv/bin/activate    # On Linux/Mac
+venv\Scripts\activate       # On Windows
+Install dependencies:
 
-2. **Speak your command when prompted.**
+sh
 
-   Example commands:
+Copy
+pip install -r requirements.txt
+Note: If you get errors with PyAudio on Windows, run:
 
-   * “Wikipedia Albert Einstein”
-   * “Open YouTube”
-   * “Play music”
-   * “What is the time?”
+sh
 
+Copy
+pip install pipwin
+pipwin install pyaudio
+Update the music folder path:
 
+In the code, change music_dir = 'E:\music' to your actual music folder path.
+Usage
+Run the assistant:
 
-## Troubleshooting
+sh
 
-* If the microphone is not working, check your system permissions.
-* If voice recognition is inaccurate, try speaking clearly and slowly.
+Copy
+python jarvis.py
+Speak your command when prompted.
 
-## Contributing
+Example commands:
 
+“Wikipedia Albert Einstein”
+
+“Open YouTube”
+
+“Play music”
+
+“What is the time?”
+
+Troubleshooting
+If the microphone is not working, check your system permissions.
+
+If voice recognition is inaccurate, try speaking clearly and slowly.
+
+Contributing
 Pull requests are welcome! For major changes, please open an issue first to discuss what you would like to change.
 
----
-
-**Made with ❤️ using Python**
-
+Made with ❤️ using Python
 
